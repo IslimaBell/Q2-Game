@@ -17,13 +17,13 @@ public class SizeChangeScriptPrototype : MonoBehaviour
         transform.localScale = new Vector3(-size, size, 0);
 
         // increase and decrease size
-        if (Input.GetKeyDown(KeyCode.UpArrow) && size < 4)
+        if (Input.GetKey(KeyCode.UpArrow) && size < 4)
         {
-            size += 0.1f;
+            size += 0.01f;
         }
-        if (Input.GetKeyDown(KeyCode.DownArrow) && size > 0.2)
+        if (Input.GetKey(KeyCode.DownArrow) && size > 0.2)
         {
-            size -= 0.1f;
+            size -= 0.01f;
         }
     }
 }
