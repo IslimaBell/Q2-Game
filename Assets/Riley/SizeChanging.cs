@@ -24,8 +24,6 @@ public class SizeChanging : MonoBehaviour
     void Update()
     {
         //ensures the scaling of the object is equal to the size variable
-
-
         transform.localScale = new Vector3(-size, size, 0);
 
         //keeps track of wether the object can shrink or grow
