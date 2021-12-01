@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class RefinedMovement : MonoBehaviour
 {
+    float coyoteRemember = 0;
+    [SerializeField]
+    float coyoteTime = 0.25f;
+    float jumpStorage = 0;
+    [SerializeField]
+    float jumpStorageTime = 0.25f;
     private int extraJumps;
     [SerializeField]
     private int extraJumpsValue;
@@ -37,8 +43,11 @@ public class RefinedMovement : MonoBehaviour
             extraJumps--;
         }
 
-        //if (Input.GetButtonDown("Jump") && IsGrounded() == false && extraJumps > 1)
-
+        if (Input.GetButtonDown("Jump") && IsGrounded() == false && extraJumps > 1)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, jumpPower);
+            extraJumps--;
+        }
 
             Flip();
 
@@ -53,6 +62,25 @@ public class RefinedMovement : MonoBehaviour
         if(IsGrounded() == true)
         {
             extraJumps = extraJumpsValue;
+        }
+        
+        coyoteRemember -= Time.deltaTime;
+        if (IsGrounded())
+        {
+            coyoteRemember = coyoteTime;
+        }
+
+        jumpStorage -= Time.deltaTime;
+        if(Input.GetButtonDown("Jump"))
+        {
+            jumpStorage = jumpStorageTime;
+        }
+
+        if((jumpStorage > 0) && (coyoteRemember > 0))
+        {
+            jumpStorage = 0;
+            coyoteRemember = 0;
+            rb.velocity = new Vector2(rb.velocity.x, jumpPower);
         }
     }
 
@@ -74,7 +102,7 @@ public class RefinedMovement : MonoBehaviour
 
     public bool IsGrounded()
     {
-        bool grounded = Physics2D.BoxCast(transform.position + new Vector3(0f, 0f, 0f), new Vector3(0.1f, 1f, 0f), 0, Vector2.down, 0.7f, ground);
+        bool grounded = Physics2D.BoxCast(transform.position + new Vector3(0f, 0f, 0f), new Vector3(0.1f, 0.5f, 0f), 0, Vector2.down, 0.3f, ground);
         
         return grounded;
     }

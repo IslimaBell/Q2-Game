@@ -332,11 +332,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 654ee568e3a586343903c09d234ec8ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coyoteTime: 0.25
+  jumpStorageTime: 0
+  extraJumpsValue: 1
   jumpCut: 0.5
   ground:
     serializedVersion: 2
     m_Bits: 256
-  jumpPower: 5
+  jumpPower: 1
   moveSpeed: 4
 --- !u!50 &1848777673
 Rigidbody2D:
