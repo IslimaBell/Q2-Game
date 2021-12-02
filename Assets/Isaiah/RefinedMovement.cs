@@ -7,23 +7,31 @@ public class RefinedMovement : MonoBehaviour
     float coyoteRemember = 0;
     [SerializeField]
     float coyoteTime = 0.25f;
+
     float jumpStorage = 0;
     [SerializeField]
     float jumpStorageTime = 0.25f;
+
     private int extraJumps;
     [SerializeField]
     private int extraJumpsValue;
+
     [SerializeField]
     private float jumpCut = 0.5f;
     public LayerMask ground;
     [SerializeField]
     private float jumpPower = 1f;
+
     private float horizontal;
     [SerializeField]
     private float moveSpeed = 1f;
+    [SerializeField]
+    private float dirY;
     Rigidbody2D rb;
 
     private bool facingRight = true;
+
+    public bool ClimbingAllowed { get; set; }
 
     // Start is called before the first frame update
     void Start()
@@ -36,6 +44,7 @@ public class RefinedMovement : MonoBehaviour
     void Update()
     {
         horizontal = Input.GetAxisRaw("Horizontal");
+
 
         if(Input.GetButtonDown("Jump") && IsGrounded() == true && extraJumps > 0) // Jump
         {
@@ -82,6 +91,11 @@ public class RefinedMovement : MonoBehaviour
             coyoteRemember = 0;
             rb.velocity = new Vector2(rb.velocity.x, jumpPower);
         }
+
+        if (ClimbingAllowed) // Climbing
+        {
+            dirY = Input.GetAxisRaw("Vertical") * moveSpeed;
+        }
     }
 
     private void Flip()
@@ -98,6 +112,17 @@ public class RefinedMovement : MonoBehaviour
     private void FixedUpdate()
     {
         rb.velocity = new Vector2(horizontal * moveSpeed, rb.velocity.y); //Baisc Movement
+
+        if (ClimbingAllowed)
+        {
+            rb.isKinematic = true;
+            rb.velocity = new Vector2(horizontal * moveSpeed, dirY);
+        }
+        else
+        {
+            rb.isKinematic = false;
+            rb.velocity = new Vector2(horizontal * moveSpeed, rb.velocity.y);
+        }
     }
 
     public bool IsGrounded()
