@@ -13,6 +13,7 @@ public class SizeChanging : MonoBehaviour
     public int SLevel;
     public GameObject Slime;
     public GameObject SlimeSpawnpoint;
+    public GameObject Cursor;
     public float SlimeSpeed;
     // Start is called before the first frame update
     void Start()
