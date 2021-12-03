@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Growable : MonoBehaviour
+public class BounceUp : MonoBehaviour
 {
-    public GameObject Slime;
+    public GameObject Player;
+    public float BouncePower;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,12 +18,12 @@ public class Growable : MonoBehaviour
         
     }
 
-    //lets see if this works
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "Player" && Slime.GetComponent<SizeChanging>().CanGrow == true)
+        if (collision.gameObject.tag == "Player")
         {
-            Slime.GetComponent<SizeChanging>().SLevel++;
+            Player.GetComponent<Rigidbody2D>().velocity = new Vector2(0, BouncePower);
         }
     }
+
 }

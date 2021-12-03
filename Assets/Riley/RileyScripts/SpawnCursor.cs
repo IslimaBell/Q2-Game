@@ -38,5 +38,10 @@ public class SpawnCursor : MonoBehaviour
         InThings = false;
     }
 
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        InThings = true;
+    }
+
 
 }
