@@ -23,6 +23,7 @@ public class Growable : MonoBehaviour
         if(collision.gameObject.tag == "Player" && Slime.GetComponent<SizeChanging>().CanGrow == true)
         {
             Slime.GetComponent<SizeChanging>().SLevel++;
+            Destroy(this.gameObject);
         }
     }
 }
