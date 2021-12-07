@@ -127,7 +127,7 @@ public class RefinedMovement : MonoBehaviour
 
     public bool IsGrounded()
     {
-        bool grounded = Physics2D.BoxCast(transform.position + new Vector3(0f, 0f, 0f), new Vector3(0.1f, 0.5f, 0f), 0, Vector2.down, 0.3f, ground);
+        bool grounded = Physics2D.BoxCast(transform.position + new Vector3(0f, 0f, 0f), new Vector3(0.1f, 0.6f, 0f), 0, Vector2.down, 0.3f, ground);
         
         return grounded;
     }
