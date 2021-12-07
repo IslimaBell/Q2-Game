@@ -2221,6 +2221,9 @@ GameObject:
   - component: {fileID: 1848777673}
   - component: {fileID: 1848777672}
   - component: {fileID: 1848777674}
+  - component: {fileID: 1848777679}
+  - component: {fileID: 1848777678}
+  - component: {fileID: 1848777677}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -2351,6 +2354,60 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1848777677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848777671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4039712995859f3408b0542c7c357049, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Slime: {fileID: 0}
+  InSomething: 0
+  Ground:
+    serializedVersion: 2
+    m_Bits: 0
+--- !u!114 &1848777678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848777671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44d7057fa9dd8e34bb7ff7d50fe68734, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Slime: {fileID: 0}
+  SizeRequired: 0
+--- !u!114 &1848777679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848777671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fec7a159a009ca549b48aca04ab80ab0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  size: 0
+  CanGrow: 0
+  CanShrink: 0
+  ChangeRate: 0
+  MaxSize: 0
+  MinSize: 0
+  SLevel: 0
+  Slime: {fileID: 0}
+  SlimeSpawnpoint: {fileID: 0}
+  Cursor: {fileID: 0}
+  SlimeSpeed: 0
 --- !u!1001 &4888717786764168469
 PrefabInstance:
   m_ObjectHideFlags: 0
