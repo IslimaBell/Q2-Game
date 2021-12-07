@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Jonathan/Scenes/JScene.unity
-    guid: 863853d6dbae97d4781ebb77a280b191
+    path: Assets/Jonathan/JScene.unity
+    guid: 9f91badc4a9b9de4690e1eb9a65ca6ea
   - enabled: 1
     path: Assets/Jonathan/Temp.unity
     guid: a9d56714bb0d6f3478e5180bc5f22026
