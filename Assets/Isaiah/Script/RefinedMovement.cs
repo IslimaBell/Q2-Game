@@ -43,9 +43,7 @@ public class RefinedMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        horizontal = Input.GetAxisRaw("Horizontal");
-
-
+        
         if(Input.GetButtonDown("Jump") && IsGrounded() == true && extraJumps > 0) // Jump
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpPower);
@@ -60,7 +58,7 @@ public class RefinedMovement : MonoBehaviour
 
             Flip();
 
-        if(Input.GetButtonUp("Jump"))
+        if(Input.GetButtonUp("Jump")) //Jump cut
         {
             if(rb.velocity.y > 0)
             {
@@ -96,7 +94,10 @@ public class RefinedMovement : MonoBehaviour
         {
             dirY = Input.GetAxisRaw("Vertical") * moveSpeed;
         }
+
+        horizontal = Input.GetAxisRaw("Horizontal"); //Movement
     }
+    
 
     private void Flip()
     {
@@ -112,8 +113,8 @@ public class RefinedMovement : MonoBehaviour
     private void FixedUpdate()
     {
         rb.velocity = new Vector2(horizontal * moveSpeed, rb.velocity.y); //Baisc Movement
-
-        if (ClimbingAllowed)
+     
+        if (ClimbingAllowed) //Climbing
         {
             rb.isKinematic = true;
             rb.velocity = new Vector2(horizontal * moveSpeed, dirY);
