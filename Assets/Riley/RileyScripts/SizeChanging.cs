@@ -58,7 +58,7 @@ public class SizeChanging : MonoBehaviour
         }
 
         //player shrinking
-        if(Input.GetKeyDown(KeyCode.Space) && CanShrink == true)
+        if(Input.GetKeyDown(KeyCode.Space) && CanShrink == true && Cursor.GetComponent<SpawnCursor>().InSomething == false)
         {
             SLevel--;
             GameObject b = Instantiate(Slime, SlimeSpawnpoint.transform.position, Quaternion.identity);
