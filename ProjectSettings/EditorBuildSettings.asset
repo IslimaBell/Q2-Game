@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Jonathan/Scenes/JScene.unity
     guid: 863853d6dbae97d4781ebb77a280b191
+  - enabled: 1
+    path: Assets/Jonathan/Temp.unity
+    guid: a9d56714bb0d6f3478e5180bc5f22026
   m_configObjects: {}
