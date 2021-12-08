@@ -30,6 +30,7 @@ public class RefinedMovement : MonoBehaviour
     Rigidbody2D rb;
 
     private bool facingRight = true;
+    private SpriteRenderer sr;
 
     public bool ClimbingAllowed { get; set; }
 
@@ -38,6 +39,7 @@ public class RefinedMovement : MonoBehaviour
     {
         extraJumps = extraJumpsValue;
         rb = GetComponent<Rigidbody2D>();
+        sr = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -56,9 +58,7 @@ public class RefinedMovement : MonoBehaviour
             extraJumps--;
         }
 
-            Flip();
-
-        if(Input.GetButtonUp("Jump")) //Jump cut
+          if(Input.GetButtonUp("Jump")) //Jump cut
         {
             if(rb.velocity.y > 0)
             {
@@ -96,6 +96,21 @@ public class RefinedMovement : MonoBehaviour
         }
 
         horizontal = Input.GetAxisRaw("Horizontal"); //Movement
+
+        //Move right
+        if (Input.GetAxis("Horizontal") > 0)
+        {
+            sr.flipX = false;
+            rb.AddForce(new Vector2(moveSpeed, 0));
+        }
+
+        //Move left
+        if (Input.GetAxis("Horizontal") < 0)
+        {
+            sr.flipX = true;
+            rb.AddForce(new Vector2(-moveSpeed, 0));
+        }
+        Flip();
     }
     
 

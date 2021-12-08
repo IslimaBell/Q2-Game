@@ -15,13 +15,13 @@ public class MoveSpawnPoint : MonoBehaviour
     {
         if (Input.GetAxis("Horizontal") > 0)
         {
-            transform.localPosition = new Vector3(-2, 0, 0);
+            transform.localPosition = new Vector3(2, 0, 0);
         }
 
         //Move left
         if (Input.GetAxis("Horizontal") < 0)
         {
-            transform.localPosition = new Vector3(2, 0, 0);
+            transform.localPosition = new Vector3(-2, 0, 0);
         }
     }
 }
