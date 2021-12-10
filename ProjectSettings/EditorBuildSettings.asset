@@ -9,9 +9,15 @@ EditorBuildSettings:
     path: Assets/Jonathan/JScene.unity
     guid: 9f91badc4a9b9de4690e1eb9a65ca6ea
   - enabled: 1
-    path: Assets/Jonathan/Temp.unity
-    guid: a9d56714bb0d6f3478e5180bc5f22026
+    path: Assets/Riley/RileysTutorialLevel.unity
+    guid: 8707927b8419b214d912d8bf6b2fc607
   - enabled: 1
     path: Assets/Jonathan/Credits.unity
     guid: fa2fd20befa49ca4aa7907541ac94f8a
+  - enabled: 1
+    path: Assets/Isaiah/Scenes/Movement_Test.unity
+    guid: 0452701f588f32642b7d3f071d2dfb96
+  - enabled: 1
+    path: Assets/Isaiah/Scenes/Respawn.unity
+    guid: 8ebc336679fab054a949d6a71ada9d2c
   m_configObjects: {}

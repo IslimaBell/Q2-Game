@@ -48,6 +48,6 @@ public class GlobalTime : MonoBehaviour
     IEnumerator RespawningLevel()
     {
         yield return new WaitForSeconds(3);
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(4);
     }
 }
