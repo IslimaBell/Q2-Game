@@ -8,6 +8,8 @@ public class Button : MonoBehaviour
     [SerializeField]
     GameObject door;
 
+    public Animator animator;
+
     bool isOpened = false;
     bool isClosed = true;
 
@@ -17,6 +19,7 @@ public class Button : MonoBehaviour
         {
             isOpened = true;
             isClosed = false;
+            animator.SetBool("Pushed", true);
             door.transform.position += new Vector3(0, 4, 0);
         }
     }
@@ -27,6 +30,7 @@ public class Button : MonoBehaviour
         {
             isOpened = false;
             isClosed = true;
+            animator.SetBool("Pushed", false);
             door.transform.position -= new Vector3(0, 4, 0);
         }
     }
