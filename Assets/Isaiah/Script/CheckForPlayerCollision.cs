@@ -9,6 +9,7 @@ public class CheckForPlayerCollision : MonoBehaviour
     public GameObject player;
     public GameObject EnemyText;
     public GameObject fadeOut;
+    public Animator animator;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -17,6 +18,7 @@ public class CheckForPlayerCollision : MonoBehaviour
             player.GetComponent<RefinedMovement>().enabled = false;
             EnemyText.SetActive(true);
             fadeOut.SetActive(true);
+            animator.SetBool("IsDead", true);
             StartCoroutine(RespawningLevel());
         }
     }

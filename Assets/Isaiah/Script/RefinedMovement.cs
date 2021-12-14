@@ -96,7 +96,7 @@ public class RefinedMovement : MonoBehaviour
         }
 
         horizontal = Input.GetAxisRaw("Horizontal"); //Movement
-
+        //Debug.Log(horizontal);
         //Move right
         if (Input.GetAxis("Horizontal") > 0)
         {
