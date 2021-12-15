@@ -11,7 +11,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 59f00718f9e8615498c47de2ccbd21f6,
+      objectReference: {fileID: 21300000, guid: 4e29e9c83781d604b92202f906c7e97a,
         type: 3}
     - target: {fileID: 6152190168489263225, guid: 550e342d6ca100c47846a160dd49367b,
         type: 3}
@@ -36,7 +36,7 @@ PrefabInstance:
     - target: {fileID: 6152190169201817280, guid: 550e342d6ca100c47846a160dd49367b,
         type: 3}
       propertyPath: m_Name
-      value: Flower Stem
+      value: Flower Stem Variant
       objectReference: {fileID: 0}
     - target: {fileID: 6152190169201817282, guid: 550e342d6ca100c47846a160dd49367b,
         type: 3}
