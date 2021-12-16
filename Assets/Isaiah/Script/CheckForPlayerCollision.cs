@@ -18,8 +18,9 @@ public class CheckForPlayerCollision : MonoBehaviour
             player.GetComponent<RefinedMovement>().enabled = false;
             EnemyText.SetActive(true);
             fadeOut.SetActive(true);
-            animator.SetBool("IsDead", true);
             StartCoroutine(RespawningLevel());
+            animator.SetBool("IsDead", true);
+            
         }
     }
 
