@@ -5,8 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class PlaceholderSceneTrasitionR : MonoBehaviour
 {
+    public int SceneNumber;
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        SceneManager.LoadScene("LevelOne");
+        SceneManager.LoadScene(SceneNumber);
     }
 }
