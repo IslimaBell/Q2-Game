@@ -32,6 +32,8 @@ public class RefinedMovement : MonoBehaviour
     private bool facingRight = true;
     private SpriteRenderer sr;
 
+    public Animator animator;
+
     public bool ClimbingAllowed { get; set; }
 
     // Start is called before the first frame update
@@ -92,7 +94,9 @@ public class RefinedMovement : MonoBehaviour
 
         if (ClimbingAllowed) // Climbing
         {
+     
             dirY = Input.GetAxisRaw("Vertical") * moveSpeed;
+            
         }
 
         horizontal = Input.GetAxisRaw("Horizontal"); //Movement
@@ -131,13 +135,15 @@ public class RefinedMovement : MonoBehaviour
      
         if (ClimbingAllowed) //Climbing
         {
+            animator.SetBool("IsClimbing", true);
             rb.isKinematic = true;
-            rb.velocity = new Vector2(horizontal * moveSpeed, dirY);
+            rb.velocity = new Vector2(horizontal * moveSpeed, dirY);           
         }
         else
         {
+            animator.SetBool("IsClimbing", false);
             rb.isKinematic = false;
-            rb.velocity = new Vector2(horizontal * moveSpeed, rb.velocity.y);
+            rb.velocity = new Vector2(horizontal * moveSpeed, rb.velocity.y);         
         }
     }
 

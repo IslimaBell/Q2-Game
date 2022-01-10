@@ -4070,11 +4070,36 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 99596144881589693, guid: f757a818ded722f4da038bab66182b0e,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.14509805
+      objectReference: {fileID: 0}
+    - target: {fileID: 99596144881589693, guid: f757a818ded722f4da038bab66182b0e,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.9647059
+      objectReference: {fileID: 0}
+    - target: {fileID: 99596144881589693, guid: f757a818ded722f4da038bab66182b0e,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.8873666
+      objectReference: {fileID: 0}
+    - target: {fileID: 99596144881589693, guid: f757a818ded722f4da038bab66182b0e,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 99596144881589694, guid: f757a818ded722f4da038bab66182b0e,
         type: 3}
       propertyPath: moveSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 99596144881589694, guid: f757a818ded722f4da038bab66182b0e,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1848777674}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f757a818ded722f4da038bab66182b0e, type: 3}
 --- !u!1001 &323779792771099401
