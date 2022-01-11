@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Respawning : MonoBehaviour
+public class RespawningLevel2 : MonoBehaviour
 {
 
     void Start()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene("LEvel2");
     }
 
 
 }
+
