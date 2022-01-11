@@ -3799,6 +3799,11 @@ PrefabInstance:
       propertyPath: fadeOut
       value: 
       objectReference: {fileID: 1199688031}
+    - target: {fileID: 323779794504448178, guid: 5ac1a1261a04f5145ad6bd46e1c3cfa4,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1848777671}
     - target: {fileID: 323779794504448179, guid: 5ac1a1261a04f5145ad6bd46e1c3cfa4,
         type: 3}
       propertyPath: m_Name

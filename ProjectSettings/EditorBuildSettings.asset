@@ -20,7 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Isaiah/Scenes/Movement_Test.unity
     guid: 0452701f588f32642b7d3f071d2dfb96
-  - enabled: 1
+  - enabled: 0
     path: Assets/Isaiah/Scenes/Respawn/Respawn.unity
     guid: 8ebc336679fab054a949d6a71ada9d2c
   - enabled: 1
@@ -29,10 +29,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Andrea/scene/LEvel2.unity
     guid: 72f503457f848df48a816d664269d699
-  - enabled: 1
+  - enabled: 0
     path: Assets/Isaiah/Scenes/Respawn/RespawnLevel1.unity
     guid: c783caa62016976478e2d3e9863a698c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Isaiah/Scenes/Respawn/RespawnLevel2.unity
     guid: ca79caef03be7834fbc594bd1391e386
   m_configObjects: {}

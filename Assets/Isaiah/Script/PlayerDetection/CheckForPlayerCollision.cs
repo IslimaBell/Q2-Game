@@ -27,6 +27,6 @@ public class CheckForPlayerCollision : MonoBehaviour
     IEnumerator RespawningLevel()
     {
         yield return new WaitForSeconds(3);
-        SceneManager.LoadScene("Respawn");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
