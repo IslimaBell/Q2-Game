@@ -686,6 +686,7 @@ GameObject:
   - component: {fileID: 171315310}
   - component: {fileID: 171315309}
   - component: {fileID: 171315308}
+  - component: {fileID: 171315312}
   m_Layer: 0
   m_Name: game enime Beatty finished2_sadie (6)
   m_TagString: Untagged
@@ -800,6 +801,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 75
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &171315312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171315307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ebea2d619cb4294b8a61252ea9db265, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  EnemyText: {fileID: 0}
+  fadeOut: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!1 &181497122
 GameObject:
   m_ObjectHideFlags: 0
@@ -1108,7 +1125,8 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 2.0909343
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4788753814743577800, guid: 91afcbdf2b4f9c547bfb4d087b2ca389, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 91afcbdf2b4f9c547bfb4d087b2ca389, type: 3}
 --- !u!1001 &212483112
 PrefabInstance:
@@ -3345,6 +3363,7 @@ GameObject:
   - component: {fileID: 636017702}
   - component: {fileID: 636017701}
   - component: {fileID: 636017704}
+  - component: {fileID: 636017705}
   m_Layer: 0
   m_Name: game enime Beatty finished2_sadie (1)
   m_TagString: Untagged
@@ -3459,6 +3478,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.86, y: 1.62}
   m_EdgeRadius: 0
+--- !u!114 &636017705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 636017700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ebea2d619cb4294b8a61252ea9db265, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  EnemyText: {fileID: 0}
+  fadeOut: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!1001 &636394746
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3641,6 +3676,7 @@ GameObject:
   - component: {fileID: 714659195}
   - component: {fileID: 714659194}
   - component: {fileID: 714659193}
+  - component: {fileID: 714659197}
   m_Layer: 0
   m_Name: game enime Beatty finished2_sadie (3)
   m_TagString: Untagged
@@ -3755,6 +3791,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 72
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &714659197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 714659192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ebea2d619cb4294b8a61252ea9db265, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  EnemyText: {fileID: 0}
+  fadeOut: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!1001 &764737485
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4017,12 +4069,12 @@ PrefabInstance:
     - target: {fileID: 222051437643462210, guid: a492d0e251816d94f8b5511642805147,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 32.89
+      value: 32.61
       objectReference: {fileID: 0}
     - target: {fileID: 222051437643462210, guid: a492d0e251816d94f8b5511642805147,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.97
+      value: -1.89
       objectReference: {fileID: 0}
     - target: {fileID: 222051437643462210, guid: a492d0e251816d94f8b5511642805147,
         type: 3}
@@ -4221,12 +4273,12 @@ PrefabInstance:
     - target: {fileID: 2014169852319893059, guid: 93297e8db4b9e404bb5cb6f24d142dec,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.255727
+      value: 12.94
       objectReference: {fileID: 0}
     - target: {fileID: 2014169852319893059, guid: 93297e8db4b9e404bb5cb6f24d142dec,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.4648046
+      value: -1.44
       objectReference: {fileID: 0}
     - target: {fileID: 2014169852319893059, guid: 93297e8db4b9e404bb5cb6f24d142dec,
         type: 3}
@@ -20527,6 +20579,7 @@ GameObject:
   - component: {fileID: 1601214992}
   - component: {fileID: 1601214991}
   - component: {fileID: 1601214990}
+  - component: {fileID: 1601214994}
   m_Layer: 0
   m_Name: game enime Beatty finished2_sadie (8)
   m_TagString: Untagged
@@ -20641,6 +20694,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 77
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1601214994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601214989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ebea2d619cb4294b8a61252ea9db265, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  EnemyText: {fileID: 0}
+  fadeOut: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!1 &1630008439 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2762012792118743473, guid: a2f232da34e92cc48a901bd870757727,
@@ -20885,6 +20954,7 @@ GameObject:
   - component: {fileID: 1709230728}
   - component: {fileID: 1709230727}
   - component: {fileID: 1709230726}
+  - component: {fileID: 1709230730}
   m_Layer: 0
   m_Name: game enime Beatty finished2_sadie (7)
   m_TagString: Untagged
@@ -20999,6 +21069,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 76
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1709230730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709230725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ebea2d619cb4294b8a61252ea9db265, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  EnemyText: {fileID: 0}
+  fadeOut: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!1001 &1733045509
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27036,6 +27122,7 @@ GameObject:
   - component: {fileID: 1869757555}
   - component: {fileID: 1869757554}
   - component: {fileID: 1869757553}
+  - component: {fileID: 1869757557}
   m_Layer: 0
   m_Name: game enime Beatty finished2_sadie (2)
   m_TagString: Untagged
@@ -27150,6 +27237,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 71
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1869757557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869757552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ebea2d619cb4294b8a61252ea9db265, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  EnemyText: {fileID: 0}
+  fadeOut: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!1 &1903661631
 GameObject:
   m_ObjectHideFlags: 0
@@ -27162,6 +27265,7 @@ GameObject:
   - component: {fileID: 1903661634}
   - component: {fileID: 1903661633}
   - component: {fileID: 1903661632}
+  - component: {fileID: 1903661636}
   m_Layer: 0
   m_Name: game enime Beatty finished2_sadie
   m_TagString: Untagged
@@ -27276,6 +27380,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 69
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1903661636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1903661631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ebea2d619cb4294b8a61252ea9db265, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  EnemyText: {fileID: 0}
+  fadeOut: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!1 &1911085697 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7475082490780405605, guid: 9c5b7e1b845f20547a1c158e8fbd700b,
@@ -27300,6 +27420,7 @@ GameObject:
   - component: {fileID: 1921571684}
   - component: {fileID: 1921571683}
   - component: {fileID: 1921571682}
+  - component: {fileID: 1921571686}
   m_Layer: 0
   m_Name: game enime Beatty finished2_sadie (5)
   m_TagString: Untagged
@@ -27414,6 +27535,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 74
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1921571686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1921571681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ebea2d619cb4294b8a61252ea9db265, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  EnemyText: {fileID: 0}
+  fadeOut: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!1001 &1923924065
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27611,6 +27748,7 @@ GameObject:
   - component: {fileID: 1932822844}
   - component: {fileID: 1932822843}
   - component: {fileID: 1932822842}
+  - component: {fileID: 1932822846}
   m_Layer: 0
   m_Name: game enime Beatty finished2_sadie (4)
   m_TagString: Untagged
@@ -27725,6 +27863,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 73
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1932822846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1932822841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ebea2d619cb4294b8a61252ea9db265, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  EnemyText: {fileID: 0}
+  fadeOut: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!1001 &1949712922
 PrefabInstance:
   m_ObjectHideFlags: 0
