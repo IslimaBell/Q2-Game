@@ -746,6 +746,32 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4099036279720559815, guid: 0253ee4ccf5e58f459fefd44699553f1,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4099036279720559815, guid: 0253ee4ccf5e58f459fefd44699553f1,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4099036279720559815, guid: 0253ee4ccf5e58f459fefd44699553f1,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4099036279720559815, guid: 0253ee4ccf5e58f459fefd44699553f1,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 246d3935e52fdf04984f53cec93cd96d,
+        type: 3}
+    - target: {fileID: 4099036279720559815, guid: 0253ee4ccf5e58f459fefd44699553f1,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4099036279720559817, guid: 0253ee4ccf5e58f459fefd44699553f1,
         type: 3}
       propertyPath: player
@@ -836,6 +862,32 @@ PrefabInstance:
       propertyPath: Slime
       value: 
       objectReference: {fileID: 2084899082}
+    - target: {fileID: 4443275530207188078, guid: a3d85e4bc3f7b9045ab9c72e0d81b405,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 876f157e0f8577b489e997a9dec4d247,
+        type: 3}
+    - target: {fileID: 4443275530207188078, guid: a3d85e4bc3f7b9045ab9c72e0d81b405,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4443275530207188078, guid: a3d85e4bc3f7b9045ab9c72e0d81b405,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4443275530207188079, guid: a3d85e4bc3f7b9045ab9c72e0d81b405,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 4443275530207188079, guid: a3d85e4bc3f7b9045ab9c72e0d81b405,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.58
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3d85e4bc3f7b9045ab9c72e0d81b405, type: 3}
 --- !u!1 &453118493 stripped
