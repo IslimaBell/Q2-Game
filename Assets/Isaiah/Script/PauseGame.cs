@@ -44,12 +44,12 @@ public class PauseGame : MonoBehaviour
     public void RestartLevel()
     {
         Time.timeScale = 1;
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(SceneManager.GetActiveScene ().buildIndex);
     }
 
     public void MainMenu()
     {
         Time.timeScale = 1;
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("JScene");
     }
 }
