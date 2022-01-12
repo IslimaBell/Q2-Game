@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class CutSceneToGame : MonoBehaviour
+public class MenuToCutScene1 : MonoBehaviour
 {
     public void ButtonMoveScene(string level)
     {
         SceneManager.LoadScene(level);
     }
 }
+
