@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Andrea/scene/LEvel2.unity
     guid: 72f503457f848df48a816d664269d699
+  - enabled: 1
+    path: Assets/Jonathan/CutSscene2.unity
+    guid: 270efa8f878fd7b409405640022dcaf9
   m_configObjects: {}
