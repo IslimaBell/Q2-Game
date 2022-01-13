@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class SizeChanging : MonoBehaviour
 {
+
+    public AudioSource slimePlace;
+
     public float size;
     public bool CanGrow;
     public bool CanShrink;
@@ -64,6 +67,7 @@ public class SizeChanging : MonoBehaviour
             GameObject b = Instantiate(Slime, SlimeSpawnpoint.transform.position, Quaternion.identity);
             Rigidbody2D rb2b = b.GetComponent<Rigidbody2D>();
             rb2b.AddForce(SlimeSpeed * transform.up);
+            slimePlace.Play();
         }
     }
     }
