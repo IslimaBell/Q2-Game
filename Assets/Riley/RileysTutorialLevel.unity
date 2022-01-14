@@ -246,6 +246,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a92badc1487f04d49a6637dfa4420edf, type: 3}
+--- !u!1 &45809698 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7287370443687165394, guid: a92badc1487f04d49a6637dfa4420edf,
+    type: 3}
+  m_PrefabInstance: {fileID: 45809697}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &45809699 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7287370443794967221, guid: a92badc1487f04d49a6637dfa4420edf,
+    type: 3}
+  m_PrefabInstance: {fileID: 45809697}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &74464463
 GameObject:
   m_ObjectHideFlags: 0
@@ -50072,12 +50084,12 @@ PrefabInstance:
         type: 3}
       propertyPath: EnemyText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 45809699}
     - target: {fileID: 2729822189046746000, guid: 0edbb3efee6a6584586a327e218246b5,
         type: 3}
       propertyPath: fadeOut
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 45809698}
     - target: {fileID: 2729822189046746000, guid: 0edbb3efee6a6584586a327e218246b5,
         type: 3}
       propertyPath: animator
