@@ -35,4 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Riley/Limbo.unity
     guid: 3b25c01e045cee74795e55bafe05ff6f
+  - enabled: 1
+    path: Assets/Jonathan/CutScenes3.unity
+    guid: c47cc8209cbc471418dec835e3301c03
   m_configObjects: {}
