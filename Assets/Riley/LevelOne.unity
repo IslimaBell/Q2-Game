@@ -651,12 +651,12 @@ PrefabInstance:
     - target: {fileID: 7287370443044316982, guid: a92badc1487f04d49a6637dfa4420edf,
         type: 3}
       propertyPath: seconds
-      value: 180
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 7514277090304018719, guid: a92badc1487f04d49a6637dfa4420edf,
         type: 3}
       propertyPath: m_Text
-      value: 'Time: 180'
+      value: 'Time: 100'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a92badc1487f04d49a6637dfa4420edf, type: 3}
